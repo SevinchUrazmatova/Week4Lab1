@@ -97,22 +97,28 @@ void solve_equation(double a, double b, double c){
 void is_triangle(double a, double b, double c){
     cout<<"Enter the values: ";
     cin>>a>>b>>c;
-
+    if (a+b>c or a+c>b or c+b>a){
+        cout<<"The triangle is valid";
+    }
+    else{
+        cout<<"The triangle is not valid";
+    }
 }
 
 
 int main() {
-    int n;
+//    int n;
 //    int a,b,c;
 //    int x,y;
-    int x;
+//    int x;
     double a, b,c;
 //    checkNum(n);
 //    NumCheck(n);
 //    check_largest( a, b, c);
 //    is_divisible(x,y);
 //    check_leap_year(x);
-    solve_equation(a,b,c);
+//    solve_equation(a,b,c);
+    is_triangle(a,b,c);
     return 0;
 
 }
